@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.Main {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+.Navbar {
+  height: 120px;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Navbar h1 {
+  font-size: 20px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+
+.Navbar h5 {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.Navbar i {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.Navbar-Part1 {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Navbar-Part1 img {
+  height: 100px;
+}
+
+.Line {
+  width: 90px;
+  height: 2px;
+  background-color: red;
+}
+
+.Content {
+  height: calc(100% - 140px);
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.Left {
+  width: 36%;
+  height: 100%;
+  padding: 160px 100px;
+
+  background-color: black;
+}
+.Left h1 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.Left h1 span {
+  color: red;
+  font-weight: 700;
+}
+
+.Left p {
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 15px;
+  line-height: 17px;
+}
+
+.Left button {
+  padding: 20px 42px;
+  border-radius: 50px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  background-color: red;
+}
+.Left button i {
+  margin-right: 10px;
+}
+.Heart {
+  font-size: 2.3rem;
+  margin-left: -15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ri-heart-line {
+  color: rgba(243, 9, 9, 0.79);
+  margin-left: -5vw;
+}
+.Right {
+  width: 36%;
+  height: 100%;
+  padding: 300px 100px;
+}
+.Center {
+  width: 26%;
+  height: 100%;
+  /* background-color: red; */
+  padding-top: 60px;
+}
+
+.center-bg {
+  width: 100%;
+  height: 88%;
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px;
+  background-image: url(Images/Background.jpg);
+  background-size: 450%;
+  background-position: 30% 40%;
+  filter: blur(2px);
+}
+
+.Content > img {
+  height: 100%;
+  position: absolute;
+  left: 49%;
+  z-index: 99;
+  top: 2%;
+  transform: translate(-50%, 0);
+}
+
+.Right-Elements {
+  width: 350px;
+}
+
+.Element1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  opacity: 0.6;
+  border-bottom: 1px solid #fff;
+}
+
+.Element1 h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.Element1 i {
+  font-size: 24px;
+}
+.Element2 h1 {
+  font-size: 24px;
+  font-weight: 600;
+  opacity: 0.6;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+.Element2 p {
+  font-size: 12px;
+  width: 70%;
+  opacity: 0.6;
+}
+
+button {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #fff;
+}
+
+button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: black;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 105%;
+}
+
+button:hover {
+  color: #fff;
+}
